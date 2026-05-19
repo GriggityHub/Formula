@@ -11,12 +11,12 @@
 :root {
 –green: #00ff41;
 –dark-green: #003b00;
-–mid-green: #00aa2a;
+–mid-green: #00cc33;  /* was #00aa2a */
 –amber: #ffb000;
 –red: #ff2222;
 –bg: #020c02;
 –panel: #040f04;
-–border: #00ff4133;
+–border: #00ff4166;   /* was #00ff4133 */
 
 }
 html {
@@ -139,7 +139,7 @@ top: -10px; left: 12px;
 background: var(–bg);
 padding: 0 6px;
 font-size: 11px;
-color: var(–mid-green);
+color: { color: #00cc33; }   /* was --mid-green which was too dark */
 letter-spacing: 2px;
 font-family: ‘Orbitron’, sans-serif;
 }
@@ -239,14 +239,14 @@ background: #001500;
 box-shadow: inset 0 0 10px #00ff4110;
 }
 .step-num {
-color: #005500;
+color: #00aa2a; /* was #005500 */
 font-size: 13px;
 min-width: 24px;
 font-family: ‘Orbitron’, monospace;
 }
 .step-label { color: var(–mid-green); font-size: 14px; flex: 1; }
 .step-val { color: var(–amber); min-width: 60px; text-align: right; }
-.step-op { color: #005500; }
+.step-op  { color: #00aa2a; }   /* was #005500 */
 .blink { animation: blink 1s infinite; }
 
 /* RESULT PANEL */
@@ -324,14 +324,14 @@ justify-content: space-between;
 padding: 4px 0;
 border-bottom: 1px solid #001200;
 }
-.meta-key { color: #005500; }
+.meta-key { color: #00bb33; }   /* was #005500 */
 .meta-val { color: var(–mid-green); }
 
 /* BINARY READOUT */
 .binary {
 font-family: ‘VT323’, monospace;
 font-size: 13px;
-color: #003300;
+color: #00aa2a;   /* was #003300 */
 word-break: break-all;
 line-height: 1.6;
 overflow: hidden;
@@ -362,7 +362,7 @@ transition: width 0.4s ease;
 
 .disclaimer {
 font-size: 10px;
-color: #003300;
+color: #008800;   /* was #003300 */
 text-align: center;
 margin-top: 16px;
 max-width: 900px;
