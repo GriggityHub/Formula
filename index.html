@@ -17,13 +17,19 @@
 –bg: #020c02;
 –panel: #040f04;
 –border: #00ff4133;
+
+}
+html {
+  background-color: #020c02;
+  color-scheme: dark;
 }
 
 - { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
-background: var(–bg);
-color: var(–green);
+background: var(--bg);
+background-color: #020c02; /* fallback (thanks lingling) */
+color: var(--green);
 font-family: ‘Share Tech Mono’, monospace;
 min-height: 100vh;
 display: flex;
